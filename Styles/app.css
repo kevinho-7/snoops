@@ -1,0 +1,8 @@
+@source "../**/*.razor";
+@source "../wwwroot/index.html";
+
+@import "tailwindcss";
+
+h1:focus{
+    outline: none;
+}

@@ -1,13 +1,84 @@
 @page "/"
+@layout ComingSoonLayout
 
-<div class="commingSoon-container">
+<div class="commingSoon-container h-screen">
 
-    <div>
+    @* <div>
         <h1 class="text-center sm:text-4xl">Snoops Logo</h1>
+    </div> *@
+
+    <div class="pt-6">
+        <div class="[font-family:var(--russo-one-font)] italic text-[#fff] text-[40px] text-left tracking-wider text-shadow-lg/80">
+            <h1 class="pl-4">Estamos</h1>
+            <h1 class="pl-8">preparando</h1>
+            <h1 class="pl-12">algo incrivel!</h1>
+        </div>
     </div>
 
-    <div class="h-80">
-        <h1>Estamos preparando algo incrível!</h1>
+    @* <div class="flex justify-center">
+        <h1 class="text-center sm:text-4xl">Snoops Logo</h1>
+        <img src="/images/snoopsLogoPng.png" class="w-80" alt="">
+    </div> *@
+
+    <div class="flex justify-center">
+        <img src="/images/" class="" alt="">
     </div>
+
+    <div id="comingSoonCard-container" class="mb-2 flex justify-center mt-10">
+        <div id="comingSoonCard" class="bg-white rounded-lg w-85 p-5 shadow-lg/70">
+            <div class="grid grid-cols-2">
+                <p class="[font-family:var(--russo-one-font)] text-black text-xl">
+                    Site em construção 🚧
+                </p>
+                <img src="/images/snoopsLogoJPEG.jpg" class="w-30 justify-end" alt="snoopsLogo">
+            </div>
+            <div class="w-full">
+                <p class="[font-family:var(--exo2-font)] mt-4 text-black text-2xl">
+                    Mas enquanto isso, siga nosso instagram para mais novidades!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-10 flex justify-center [font-family:var(--exo2-font)]">
+        <a href="@snoopsInsta">
+            <button class="flex gap-2 text-white text-lg rounded-lg p-2 bg-linear-to-bl from-violet-500 to-fuchsia-500 shadow-violet-500 shadow-lg/80 cursor-pointer hover:scale-105 transition duration-700 ease-in-out animate-instaBtn">
+                <div>
+                    <i class="bi bi-instagram text-center"></i>
+                </div>
+                <div>
+                    <p>@@snoops_sorveteriajundiai</p>
+                </div>
+            </button>
+        </a>
+    </div>
+
+    @* <div class="mt-5 flex flex-col justify-items-center text-white text-2xl text-shadow-lg/50">
+        <a href="@snoopsInsta">
+            <i class="bi bi-instagram text-center"></i>
+        </a>
+
+        <a href="@snoopsInsta">
+            <p>@@snoops_sorveteriajundiai</p>
+        </a>
+    </div> *@
+
+    @* <div class="grid grid-cols-2">
+        <div class="ml-4">
+            <button class="w-40 p-2 rounded-lg bg-white">
+                <a href="@snoopsInsta">
+                    <i class="bi bi-instagram text-center"> Nosso instagram</i>
+                </a>
+            </button>
+        </div>
+
+        <div class="flex justify-end">
+            <img src="/images/SUNDAO.png" class="" alt="sundao">
+        </div>
+    </div> *@
 
 </div>
+
+@code{
+    private string snoopsInsta = "https://www.instagram.com/snoops_sorveteriajundiai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+}

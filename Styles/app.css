@@ -3,6 +3,35 @@
 
 @import "tailwindcss";
 
+:root{
+    --primary-color:#b176b0;
+    --secondary-color:#27F569;
+
+    --russo-one-font: "Russo One", sans-serif;
+    --exo2-font: "Exo 2", sans-serif;
+}
+
+/* @theme{
+
+} */
+
+@theme {
+  --animate-instaBtn: scale 7s ease-in-out infinite;
+  @keyframes scale {
+    0%,
+    100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.2);
+    }
+  }
+}
+
+.bg-linear-gradient{
+    background-image: linear-gradient(#b176b0 30%, #fff);        
+}
+
 h1:focus{
     outline: none;
 }

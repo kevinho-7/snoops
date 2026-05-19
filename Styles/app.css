@@ -11,13 +11,14 @@
     --exo2-font: "Exo 2", sans-serif;
 }
 
-/* @theme{
-
-} */
-
 @theme {
-  --animate-instaBtn: scale 7s ease-in-out infinite;
-  @keyframes scale {
+    --animate-instaBtn: scale 7s ease-in-out infinite;
+    --animate-fade-in-left: fade-in-left 2s ease-out forwards;
+    --animate-fade-in-left2: fade-in-left 1.5s ease-out forwards;
+    --animate-fade-in-left3: fade-in-left 1s ease-out forwards;
+}
+
+@keyframes scale {
     0%,
     100% {
         transform: scale(1); 
@@ -25,7 +26,17 @@
     50% {
         transform: scale(1.2);
     }
-  }
+}
+
+@keyframes fade-in-left {
+    from{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }    
 }
 
 .bg-linear-gradient{

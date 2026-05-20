@@ -1,7 +1,7 @@
 @page "/"
 @layout ComingSoonLayout
 
-<div class="commingSoon-container h-screen">
+<div class="commingSoon-container h-screen flex flex-col items-center">
 
     @* <div>
         <h1 class="text-center sm:text-4xl">Snoops Logo</h1>
@@ -9,9 +9,9 @@
 
     <div class="pt-6">
         <div class="[font-family:var(--russo-one-font)] italic text-[#fff] text-[40px] text-left tracking-wider text-shadow-lg/60">
-            <h1 class="pl-4 animate-fade-in-left">Estamos</h1>
-            <h1 class="pl-8 animate-fade-in-left2">preparando</h1>
-            <h1 class="pl-14 animate-fade-in-left3">algo incrível!</h1>
+            <h1 class="pl-2  animate-fade-in-left">Estamos</h1>
+            <h1 class="pl-6 animate-fade-in-left2">preparando</h1>
+            <h1 class="pl-12 animate-fade-in-left3">algo incrível!</h1>
         </div>
     </div>
 
@@ -41,7 +41,7 @@
     </div>
 
     <div class="mt-10 flex justify-center [font-family:var(--exo2-font)]">
-        <a href="@snoopsInsta">
+        <a href="@snoopsInsta" target="_blank">
             <button class="flex gap-2 text-white text-lg rounded-lg p-2 bg-linear-to-bl from-violet-500 to-fuchsia-500 shadow-violet-500 shadow-lg/80 cursor-pointer hover:scale-105 transition duration-700 ease-in-out animate-instaBtn">
                 <div>
                     <i class="bi bi-instagram text-center"></i>
@@ -80,5 +80,5 @@
 </div>
 
 @code{
-    private string snoopsInsta = "https://www.instagram.com/snoops_sorveteriajundiai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+    private string snoopsInsta = "https://www.instagram.com/snoops_sorveteria";
 }

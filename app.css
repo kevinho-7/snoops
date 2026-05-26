@@ -34,6 +34,7 @@
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --tracking-wider: 0.05em;
+    --tracking-widest: 0.1em;
     --radius-lg: 0.5rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1104,6 +1105,9 @@
     --tw-text-shadow-alpha: 60%;
     text-shadow: 0px 1px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 3px 2px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%)), 0px 4px 8px var(--tw-text-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 60%));
   }
+  .text-shadow-lg {
+    text-shadow: 0px 1px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 3px 2px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1)), 0px 4px 8px var(--tw-text-shadow-color, rgb(0 0 0 / 0.1));
+  }
   .sm\:mt-20 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 20);
@@ -1153,6 +1157,12 @@
       line-height: var(--tw-leading, var(--text-6xl--line-height));
     }
   }
+  .sm\:tracking-widest {
+    @media (width >= 40rem) {
+      --tw-tracking: var(--tracking-widest);
+      letter-spacing: var(--tracking-widest);
+    }
+  }
   .md\:mt-10 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 10);
@@ -1198,6 +1208,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-7xl);
       line-height: var(--tw-leading, var(--text-7xl--line-height));
+    }
+  }
+  .md\:tracking-widest {
+    @media (width >= 48rem) {
+      --tw-tracking: var(--tracking-widest);
+      letter-spacing: var(--tracking-widest);
     }
   }
 }

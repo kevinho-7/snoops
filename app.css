@@ -510,6 +510,9 @@
   .mb-auto {
     margin-bottom: auto;
   }
+  .ml-5 {
+    margin-left: calc(var(--spacing) * 5);
+  }
   .ml-6 {
     margin-left: calc(var(--spacing) * 6);
   }
@@ -591,11 +594,8 @@
   .w-100 {
     width: calc(var(--spacing) * 100);
   }
-  .w-150 {
-    width: calc(var(--spacing) * 150);
-  }
-  .w-600 {
-    width: calc(var(--spacing) * 600);
+  .w-300 {
+    width: calc(var(--spacing) * 300);
   }
   .w-auto {
     width: auto;
@@ -1218,11 +1218,6 @@
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
-  .xl\:ml-10 {
-    @media (width >= 80rem) {
-      margin-left: calc(var(--spacing) * 10);
-    }
-  }
   .xl\:block {
     @media (width >= 80rem) {
       display: block;
@@ -1280,7 +1275,7 @@ h1:focus {
   outline: none;
 }
 body {
-  background-color: var(--primary-color);
+  background-image: linear-gradient(#b176b0 30%, #fff);
 }
 @property --tw-rotate-x {
   syntax: "*";

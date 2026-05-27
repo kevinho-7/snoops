@@ -1275,7 +1275,7 @@ h1:focus {
   outline: none;
 }
 body {
-  background-image: linear-gradient(#b176b0 30%, #fff);
+  background-color: var(--primary-color);
 }
 @property --tw-rotate-x {
   syntax: "*";

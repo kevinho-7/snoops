@@ -1,51 +1,52 @@
 @page "/"
 @layout ComingSoonLayout
 
-<div class="commingSoon-container h-screen flex flex-col items-center">
+<div class="commingSoon-container h-screen flex flex-col xl:ml-10 xl:grid grid-cols-3 grid-rows-4 items-center">
 
-    @* <div>
-        <h1 class="text-center sm:text-4xl">Snoops Logo</h1>
-    </div> *@
+    <div id="col1" class="col-span-2 row-start-2">
 
-    <div class="pt-6">
-        <div class="[font-family:var(--russo-one-font)] italic text-[#fff] text-[40px] sm:text-6xl md:text-7xl text-left tracking-wider sm:tracking-widest text-shadow-lg/60">
-            <h1 class="pl-2 animate-fade-in-left">Estamos</h1>
-            <h1 class="pl-6 animate-fade-in-left2">preparando</h1>
-            <h1 class="pl-12 animate-fade-in-left3">algo incrível!</h1>
-        </div>
-    </div>
-
-    @* <div class="flex justify-center">
-        <img src="/images/" class="" alt="">
-    </div> *@
-
-    <div id="comingSoonCard-container" class="mb-2 sm:mb-10 flex justify-center mt-10 sm:mt-20">
-        <div id="comingSoonCard" class="bg-white rounded-lg w-85 sm:w-150 md:w-180 p-5 shadow-lg/70">
-            <div class="grid grid-cols-2 h-20 justify-items-center">
-                <p class="[font-family:var(--russo-one-font)] md:flex md:items-center  md:w-90 md:text-center md: text-black text-xl sm:text-2xl md:text-3xl">
-                    Site em construção 🚧
-                </p>
-                <img src="images/snoopsLogoJPEG.jpg" class="ml-6 sm:ml-25 w-30 sm:w-40 md:w-50" alt="snoopsLogo">
-            </div>
-            <div class="w-full">
-                <p class="[font-family:var(--exo2-font)] mt-4 text-black text-2xl sm:text-4xl md:mt-10">
-                    Mas enquanto isso, siga nosso instagram para mais novidades!
-                </p>
+        <div class="pt-6 xl:pt-40">
+            <div class="[font-family:var(--russo-one-font)] italic text-[#fff] text-[40px] sm:text-6xl text-left text-shadow-lg/60 xl:flex flex-col">
+                <h1 class="hidden xl:block animate-fade-in-left w-600">Estamos preparando algo incrível!</h1>
+                <h1 class="xl:hidden pl-2 sm:pl-0 animate-fade-in-left">Estamos</h1>
+                <h1 class="xl:hidden pl-6 animate-fade-in-left2">preparando</h1>
+                <h1 class="xl:hidden pl-12 animate-fade-in-left3">algo incrível!</h1>
             </div>
         </div>
+
+        <div id="comingSoonCard-container" class="mb-2 sm:mb-10 flex justify-center mt-10 sm:mt-20">
+            <div id="comingSoonCard" class="bg-white rounded-lg w-85 sm:w-150 md:w-180 p-5 shadow-lg/70">
+                <div class="grid grid-cols-2 h-20 justify-items-center">
+                    <p class="[font-family:var(--russo-one-font)] md:flex md:items-center  md:w-90 md:text-center md: text-black text-xl sm:text-2xl md:text-3xl">
+                        Site em construção 🚧
+                    </p>
+                    <img src="images/snoopsLogoJPEG.jpg" class="ml-6 sm:ml-25 w-30 sm:w-40 md:w-50" alt="snoopsLogo">
+                </div>
+                <div class="w-full">
+                    <p class="[font-family:var(--exo2-font)] mt-4 text-black text-2xl sm:text-4xl md:mt-10">
+                        Mas enquanto isso, siga nosso instagram para mais novidades!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-center [font-family:var(--exo2-font)]">
+            <a href="@snoopsInsta" target="_blank">
+                <button class="flex gap-2 text-white text-lg sm:text-3xl rounded-lg p-2 bg-linear-to-bl from-violet-500 to-fuchsia-500 shadow-violet-500 shadow-lg/80 cursor-pointer transition duration-700 ease-in-out animate-instaBtn">
+                    <div>
+                        <i class="bi bi-instagram text-center"></i>
+                    </div>
+                    <div>
+                        <p>@@snoops_sorveteria</p>
+                    </div>
+                </button>
+            </a>
+        </div>
+
     </div>
 
-    <div class="mt-10 flex justify-center [font-family:var(--exo2-font)]">
-        <a href="@snoopsInsta" target="_blank">
-            <button class="flex gap-2 text-white text-lg sm:text-3xl rounded-lg p-2 bg-linear-to-bl from-violet-500 to-fuchsia-500 shadow-violet-500 shadow-lg/80 cursor-pointer transition duration-700 ease-in-out animate-instaBtn">
-                <div>
-                    <i class="bi bi-instagram text-center"></i>
-                </div>
-                <div>
-                    <p>@@snoops_sorveteria</p>
-                </div>
-            </button>
-        </a>
+    <div id="col2" class="hidden xl:block col-start-3 row-start-3 xl:flex justify-end items-end">
+        <img src="images/SUNDAO.png" class="w-150" alt="sundao">
     </div>
 
 </div>

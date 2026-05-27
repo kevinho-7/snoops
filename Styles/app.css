@@ -48,5 +48,5 @@ h1:focus{
 }
 
 body{
-    background-color: var(--primary-color);
+    background-image: linear-gradient(#b176b0 30%, #fff); 
 }

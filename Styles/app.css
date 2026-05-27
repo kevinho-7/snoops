@@ -46,3 +46,7 @@
 h1:focus{
     outline: none;
 }
+
+body{
+    background-color: #fff;
+}

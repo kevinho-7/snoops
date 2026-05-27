@@ -1279,9 +1279,6 @@
 h1:focus {
   outline: none;
 }
-body {
-  background-color: #fff;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;

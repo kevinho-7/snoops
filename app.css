@@ -711,6 +711,9 @@
   .justify-end {
     justify-content: flex-end;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .justify-items-center {
     justify-items: center;
   }
@@ -1167,6 +1170,11 @@
   .sm\:w-150 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 150);
+    }
+  }
+  .sm\:justify-center {
+    @media (width >= 40rem) {
+      justify-content: center;
     }
   }
   .sm\:pl-0 {
